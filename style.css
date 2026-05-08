@@ -170,6 +170,10 @@ nav {
   gap: 2.2rem;
 }
 
+.ri-menu-line {
+  display: none;
+}
+
 .links {
   display: flex;
   gap: 1.4rem;
@@ -957,18 +961,50 @@ h4 {
 
 @media (max-width: 640px) {
   body {
-    padding-inline: 1.2rem;
+    /* padding-inline: 1.2rem; */
+    width: 100%;
+  }
+
+  header {
+    padding-inline: 1rem;
+    width: 100%;
+    z-index: 9;
+    margin-left: -5%;
+    /* margin-bottom: 8rem; */
   }
 
   nav {
     align-items: flex-start;
     gap: 1rem;
-    flex-direction: column;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    padding-inline: none;
+  }
+
+  .ri-menu-line {
+    display: block;
+    font-size: 1.6rem;
   }
 
   .links {
     flex-wrap: wrap;
+    display: none;
   }
+
+  .hero {
+    /* margin-top: 4rem; */
+    display: flex;
+    flex-direction: column-reverse;
+    /* background-color: red; */
+  }
+
+  .right-hero{
+    margin-top: 8rem;
+  }
+
+  .scroll-container {
+  padding: 0px 0;
+}
 
   .statistics {
     flex-direction: column;
